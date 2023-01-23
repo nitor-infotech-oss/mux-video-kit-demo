@@ -1,0 +1,35 @@
+{
+  "name": "braintreeapis",
+  "version": "1.0.0",
+  "description": "Braintree Payments API",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "env-cmd -f .env.development npm run start",
+    "start:prod": "env-cmd -f .env.production npm run start"
+  },
+  "keywords": [],
+  "author": "Suryakant Devkar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@mux/mux-node": "^6.2.0",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
